@@ -27,12 +27,14 @@ const options = {
       button.disabled = false;
     } else {
       iziToast.show({
-        maessage: 'Please choose a date in the future',
+        title: '❌ Error',
+        titleColor: '#FFF',
+        message: 'Please choose a date in the future',
+        messageColor: '#FFF',
         backgroundColor: '#EF4040',
         borderBottom: '2px solid #FFBEBE',
         borderRadius: '4px',
-        // padding: '20px',
-        messageColor: '#FFF',
+        padding: '20px',
       });
       return;
     }
@@ -77,6 +79,7 @@ function startTimer(userSelectedDate) {
     } else {
       clearInterval(countdownInterval);
       updateTimer(0);
+
       datePicker.disabled = false;
       button.disabled = false;
     }

@@ -25,3 +25,41 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-left: 80px;
+  color: #213547;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 40px;
+  margin-left: 140px;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.87);
+
+  background-color: #646cff;
+  border: 1px solid transparent;
+  border-radius: 1.25rem;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+.link:hover,
+.link:focus {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #747bff;
+}
